@@ -2,14 +2,9 @@
 
 namespace PhotographyPortfolio.Controllers
 {
-    public class PhotographyController : Controller
+    public class BWController : Controller
     {
         public IActionResult Index()
-        {
-            return View();
-        }
-
-        public IActionResult BW()
         {
             return View();
         }

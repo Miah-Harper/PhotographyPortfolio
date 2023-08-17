@@ -2,11 +2,14 @@
 @{
     ViewData["Title"] = "Home Page";
 }
+<head>
 <script src="~/lib/jquery-validation/dist/jquery.validate.min.js"></script>
 <script src="~/lib/jquery-validation-unobtrusive/jquery.validate.unobtrusive.min.js"></script>
-<link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
+ <link rel="stylesheet" href="~/css/contact.css" />
+</head>
 <div>
     <div class="col-md-6">
+        <h2>Contact Me!</h2>
         <div>
             @if (ViewBag.Message == null)
             {
@@ -46,7 +49,7 @@
                 </div>
             }
         </div>
-
+        
         <div>
             <div>
                 @if (ViewBag.Message != null)
