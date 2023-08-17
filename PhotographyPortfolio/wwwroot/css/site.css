@@ -14,13 +14,13 @@ a {
 }
 
 .btn-primary {
-  color: gray;
+  color: white;
   background-color: #1b6ec2;
   border-color: #1861ac;
 }
 
 .nav-pills .nav-link.active, .nav-pills .show > .nav-link {
-    color: #fff;
+    color: white;
     background-color: #1b6ec2;
     border-color: #1861ac;
     background-color: darkgrey;
@@ -64,7 +64,8 @@ body {
     margin: 0;
     font-family: Arial, Helvetica, sans-serif;
     text-align:center;
-    
+    background-image:url('/img/backgroundw.png');
+    background-size:cover;
 }
 
 .hero-image {
@@ -86,10 +87,11 @@ body {
     transform: translate(-50%, -50%);
     color: white;
 }
-
-.img {
-    width: 100px;
-    height: 100px;
-    /*Scale down will take the necessary specified space that is 100px x 100px without stretching the image*/
-    object-fit: scale-down;
+text {
+    width: 120px;
+    height: 60px;
+    padding: 5px;
+    border: 3px solid #8E44AD;
+    margin: 0;
 }
+
