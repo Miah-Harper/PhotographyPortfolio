@@ -1,5 +1,5 @@
-﻿body{
-    background-color:white;
+﻿body {
+    background-image: linear-gradient(to right,grey, white);
 }
 
 
@@ -18,3 +18,4 @@
         margin: 0 5px; /* Add spacing between images */
         max-width: 100%; /* Ensure images don't exceed their container */
     }
+

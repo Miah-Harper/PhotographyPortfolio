@@ -1,5 +1,7 @@
 ﻿/* Important stuff for this demo. */
-
+body {
+    background-image:linear-gradient(to right,grey, white);
+}
 img {
     width: 100%;
     height: auto;
