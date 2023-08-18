@@ -1,4 +1,5 @@
-﻿namespace PhotographyPortfolio.Models
+﻿
+namespace PhotographyPortfolio.Models
 {
     public class AppSettings
     {

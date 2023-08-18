@@ -35,7 +35,7 @@ namespace PhotographyPortfolio.Controllers
                     msz.Subject = vm.Subject;
                     msz.Body = vm.Message;
 
-                    SmtpClient smtp = new SmtpClient();
+                    SmtpClient smtp = new SmtpClient(); //simple mail transfer protocol
                     smtp.Host = _appSettings.SmtpHost;
                     smtp.Port = _appSettings.SmtpPort;
                     smtp.Credentials = new NetworkCredential(_appSettings.SmtpUsername, _appSettings.SmtpPassword);
@@ -44,7 +44,7 @@ namespace PhotographyPortfolio.Controllers
                     smtp.Send(msz);
 
                     ModelState.Clear();
-                    ViewBag.Message = "Thank you for Contacting me! I will get back to your here shortly.";
+                    ViewBag.Message = "Thank you for contacting me! I will get back to your here shortly.";
                 }
                 catch (Exception ex)
                 {
