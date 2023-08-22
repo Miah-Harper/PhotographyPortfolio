@@ -3,8 +3,9 @@ using Microsoft.AspNetCore.Hosting;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
-using PhotographyPortfolio.Models; // Import your AppSettings class namespace
+using PhotographyPortfolio.Models;
 using System.IO;
+
 
 namespace PhotographyPortfolio
 {
@@ -19,6 +20,7 @@ namespace PhotographyPortfolio
 
         public void ConfigureServices(IServiceCollection services)
         {
+
             // Build configuration
             var configuration = new ConfigurationBuilder()
                 .SetBasePath(Directory.GetCurrentDirectory())
@@ -28,8 +30,8 @@ namespace PhotographyPortfolio
             // Configure AppSettings
             services.Configure<AppSettings>(configuration.GetSection("AppSettings"));
 
-            // Other ConfigureServices code...
-
+            // Add user services
+            
             services.AddControllersWithViews();
         }
 
@@ -45,12 +47,11 @@ namespace PhotographyPortfolio
                 app.UseHsts();
             }
 
-            // Other Configure code...
-
             app.UseStaticFiles();
 
             app.UseRouting();
 
+            app.UseAuthentication();
             app.UseAuthorization();
 
             app.UseEndpoints(endpoints =>
